@@ -17,12 +17,12 @@ server.get('/artists/albums/:artistID', (req, res) => {
 });
 
 // Related Artists
-server.get('/artist/:id/relatedArtists', (req, res) => {
+server.get('/artists/:id/relatedArtists', (req, res) => {
   res.redirect('http://18.206.245.56' + req.url);
 });
 
 // Popular Songs
-server.get('/artist/:id', (req, res) => {
+server.get('/artists/:id', (req, res) => {
   res.redirect('http://18.224.17.253' + req.url);
 });
 
