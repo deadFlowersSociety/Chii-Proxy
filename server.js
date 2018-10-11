@@ -29,7 +29,7 @@ server.get("/artists/:id", (req, res) => {
 
 // Header
 server.get("/api/artists/header/:artistID", (req, res) => {
-  res.redirect("http://localhost:3004" + req.url);
+  res.redirect("ec2-18-144-16-120.us-west-1.compute.amazonaws.com" + req.url);
 });
 
 server.listen(3000, console.log("Listening on:", 3000));
